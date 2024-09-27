@@ -1,0 +1,11 @@
+[package]
+name = "os"
+version = "0.1.0"
+edition = "2021"
+
+# for cargo build profile
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
