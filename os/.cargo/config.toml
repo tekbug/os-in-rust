@@ -1,0 +1,7 @@
+# one of the things that is unclear for me is to use `unstable`. will dig more
+[unstable]
+build-std-features = ["compiler-builtins-mem"] # creating compatability between the C memory std library and our rust code
+build-std = ["core", "compiler_builtins"] # enabling access for the nightly version and unstable runtimes
+
+[build]
+target = "x86_64-os.json" # not to explicitly mention the build target
